@@ -1,0 +1,212 @@
+@charset "utf-8";
+
+@media (max-width: 768px){
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  header nav ul{
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  section {
+    padding: 60px 20px;
+  }
+
+  .skills-category {
+    padding: 30px 20px;
+  }
+
+  .skill-list {
+    gap: 20px;
+  }
+  .skill-list li {
+    padding: 8px 16px;
+  }
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: #222;
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 0 40px;
+  height: 80px;
+
+}
+
+header>h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+header nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #222;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #fff;
+  /* 임시 색상 */
+}
+
+/* Section */
+section {
+  width: 100%;
+  padding: 80px 20px;
+  box-sizing: border-box;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #222;
+  position: relative;
+}
+
+/* About */
+#about {
+  background: #fff;
+  max-height: 500px;
+}
+
+#about p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.8;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 16px;
+  color: #222;
+}
+
+/* Skills */
+#skills {
+  padding: 100px 40px;
+  text-align: center; 
+}
+
+.skills-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.skills-category {
+  width: 100%;
+  max-width: 900px;
+  background-color: #fafafa;
+  border: 1px solid #e6e6e6;
+  border-radius: 16px;
+  padding: 40px 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  margin: 0 auto;
+}
+
+.skills-category h3{
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 40px 0 20px;
+  color: #222;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-list li{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 0.94rem;
+  color: #222;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);  
+}
+
+.skill-list li img {
+  height: 32px;
+  width: 32px;
+  object-fit: contain;
+}
+
+/* Projects */
+#projects{
+  padding: 100px 40px;
+  text-align: center;
+
+}
+.project-card{
+  justify-self: center;
+  display: block;
+  max-width: 400px;
+  max-height: 600px;
+  background-color: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px 20px;
+  margin-bottom: 20px;
+}
+.project-card img{
+  border-radius: 6px;
+}
+
+/* Contact */
+#contact{
+  height: 300px;
+}
